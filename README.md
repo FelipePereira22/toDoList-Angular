@@ -28,4 +28,4 @@ Este projeto foi construído para colocar em prática os conceitos estudados em 
 | **Angular Signals (`signal`)** | Armazenamento do array `listToDo` | Reatividade de alta performance sem necessidade de bibliotecas externas como NgRx ou RxJS complexo. |
 | **Computed Signals (`computed`)** | Método `progressList()` | Cálculo automático de progresso que só é reexecutado quando o array de tarefas sofre mutação real. |
 | **Reactive Forms** | `FormGroup` e `FormControl` | Controle imutável dos dados do formulário, com regras rígidas de validação via `Validators`. |
-| **New Control Flow (`@for` / `@empty`)** | Renderização dos cards no HTML | Substituição do antigo `*ngFor` pela nova sintaxe nativa do motor do Angular, garantindo melhor performance de renderização. |
+| **Control Flow (`@for` / `@empty`)** | Renderização dos cards no HTML | Substituição do antigo `*ngFor` pela nova sintaxe nativa do motor do Angular, garantindo melhor performance de renderização. |
