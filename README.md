@@ -1,59 +1,31 @@
-# ToDoList
+# 📝 Lista de Tarefas Reativa | Angular & Signals
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.2.15.
+![Angular](https://img.shields.io/badge/Angular-DD0031?style=for-the-badge&logo=angular&logoColor=white)
+![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white)
+![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
 
-## Development server
+Uma aplicação web moderna para gerenciamento de tarefas (To-Do List) desenvolvida com foco nas arquiteturas e ferramentas mais recentes do ecossistema **Angular**. O projeto abandona abordagens antigas para adotar gerenciamento de estado 100% baseado em **Signals** e validação com **Reactive Forms**.
 
-To start a local development server, run:
+---
 
-```bash
-ng serve
-```
+## ✨ Funcionalidades
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+* **Criação de Tarefas:** Adição inteligente de tarefas divididas por Título e Categoria.
+* **Validação em Tempo Real:** Botão de envio desabilitado automaticamente até que o formulário cumpra as regras de validação (máximo de 20 caracteres e campos obrigatórios).
+* **Gestão de Estado Reativa:** Conclusão, desmarcação e exclusão de tarefas com atualização instantânea na interface sem recarga de componentes.
+* **Contador Inteligente:** Rodapé calcula em tempo real o progresso das atividades (ex: *"2 de 5 concluídas"*).
+* **UI/UX em Dark Mode:** Interface desenhada com alto contraste, feedback visual em botões (cores dinâmicas para conclusão e alerta) e texto riscado para tarefas finalizadas.
+* **Fallback de Estado Vazio:** Mensagem amigável renderizada automaticamente quando não há tarefas na lista.
 
-## Code scaffolding
+---
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+## 🛠️ Destaques Técnicos e Arquitetura
 
-```bash
-ng generate component component-name
-```
+Este projeto foi construído para colocar em prática os conceitos da nova era do Angular (Standalones e Reatividade Fina):
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
-
-```bash
-ng generate --help
-```
-
-## Building
-
-To build the project run:
-
-```bash
-ng build
-```
-
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
-
-## Running unit tests
-
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
-
-```bash
-ng test
-```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+| Conceito Utilizado | Onde foi aplicado | Benefício Técnico |
+| :--- | :--- | :--- |
+| **Angular Signals (`signal`)** | Armazenamento do array `listToDo` | Reatividade de alta performance sem necessidade de bibliotecas externas como NgRx ou RxJS complexo. |
+| **Computed Signals (`computed`)** | Método `progressList()` | Cálculo automático de progresso que só é reexecutado quando o array de tarefas sofre mutação real. |
+| **Reactive Forms** | `FormGroup` e `FormControl` | Controle imutável dos dados do formulário, com regras rígidas de validação via `Validators`. |
+| **New Control Flow (`@for` / `@empty`)** | Renderização dos cards no HTML | Substituição do antigo `*ngFor` pela nova sintaxe nativa do motor do Angular, garantindo melhor performance de renderização. |
