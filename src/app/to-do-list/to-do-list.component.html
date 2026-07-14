@@ -1,0 +1,33 @@
+<div class="container">
+  <h2 class="form-title">Lista de tarefas</h2>
+  <form [formGroup]="newForm" (ngSubmit)="addTask()" class="form-container">
+    <input formControlName="title" placeholder="Tarefa" maxlength="15">
+    <input formControlName="category" placeholder="Categoria" maxlength="15">
+    <button type="submit" [disabled]="newForm.invalid">Enviar</button>
+  </form>
+
+  <div class="container-central">
+    @for (lists of listToDo(); track lists.id) {
+      <div class="card-list">
+        <div class="card-content" [class.line-through]="lists.status">
+          <span class="task-title"> Tarefa: {{lists.title}} </span>
+          <span class="task-category"> Categoria: {{lists.category}}</span>
+        </div>
+
+        <div class="container-buttons">
+          <button (click)="conclude(lists.id)" [class]="lists.status ? 'color-warning' : 'color-check'">
+            {{ lists.status ? "Desmarcar" : "Concluir" }}
+          </button>
+
+          <button class="btn-excluir" (click)="delete(lists.id)">Excluir</button>
+        </div>
+      </div>
+    } @empty {
+      <p class="pEmpty">Lista vazia, comece a criar tarefas!</p>
+    }
+
+  </div>
+  <div class="rodape">
+    <p>{{progressList()}}</p>
+  </div>
+</div>

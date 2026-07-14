@@ -1,0 +1,180 @@
+.line-through {
+  text-decoration: line-through;
+  color: #c2c2c2;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.form-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  max-width: 500px;
+
+}
+
+.form-title {
+  margin: 1.2rem 0;
+  color: #fff;
+}
+
+.form-container input {
+  flex: 1;
+  padding: 12px;
+  margin: 0 10px 10px 0;
+  background: transparent;
+  color: #fff;
+  border: 1px solid #2a2a2a;
+  box-shadow:
+    0px 10px 25px -5px rgba(0, 0, 00.5),
+    0px 8px 10px -6px rgba(0, 0, 0, 0.5);
+  border-radius: 6px;
+}
+
+.form-container input:focus {
+  outline: none;
+  border:1px solid #338aee;
+}
+
+.form-container button {
+  padding: 12px;
+  margin-bottom: 10px;
+  border: 1px solid #338aee;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.3s;
+  background: transparent;
+  color: #ffffffb5;
+}
+
+.form-container button:hover {
+  background: #338aee;
+  color: #fff;
+  border-radius: 10px;
+}
+
+.form-container button:disabled{
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.container-central {
+  border: 1px solid #2a2a2a;
+  padding: 10px;
+  box-shadow:
+    0px 10px 25px -5px rgba(0, 0, 00.5),
+    0px 8px 10px -6px rgba(0, 0, 0, 0.5);
+  border-radius: 6px;
+  max-width: 500px;
+  width: 100%;
+}
+
+.container-central h2 {
+  text-align: center;
+  padding-bottom: 15px;
+}
+
+.card-list {
+  padding: 10px;
+  text-align: center;
+  border-bottom: 1px solid #333;
+}
+
+.card-list:last-child {
+  border-bottom: none;
+}
+
+.card-list span {
+  display: block;
+  width: 100%;
+  text-align: center;
+  margin-bottom: 12px;
+  word-wrap: break-word;
+  word-break: break-word;
+  overflow-wrap: break-word;
+}
+
+.card-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+  text-align: center;
+}
+
+.task-title {
+  display: block;
+  color: #fff;
+  word-break: break-all;
+}
+
+.task-category {
+  display: block;
+  color: #a0a0a0;
+  font-size: 1rem;
+  word-break: break-all;
+}
+
+.container-buttons {
+  text-align: center;
+  padding: 20px 0 2px 0;
+}
+
+.container-buttons button {
+  cursor: pointer;
+  margin: 0 10px;
+  padding: 7px;
+  border-radius: 5px;
+  transition: 0.3s;
+  font-size: 0.9rem;
+}
+
+.btn-excluir {
+  background-color: transparent;
+  border: 2px solid #cb2957;
+  color: #eeee;
+}
+
+.btn-excluir:hover {
+  background: #cb2957;
+}
+
+.color-check {
+  background: transparent;
+  border: 2px solid #10b981;
+  color: #eee;
+}
+
+.color-check:hover {
+  background-color: #10b981;
+  color: #121212;
+}
+
+.color-warning {
+  background-color: transparent;
+  border: 2px solid #f5cb57;
+  color: #fff;
+}
+
+.color-warning:hover {
+  background-color: #f5cb57;
+  color: #121212;
+}
+
+.pEmpty {
+  text-align: center;
+  color: #c2c2c2;
+}
+
+.rodape, .rodape p {
+  margin: 0.6rem 0;
+  color: #a0a0a0;
+}
+
