@@ -4,7 +4,7 @@
 ![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white)
 ![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
 
-Uma aplicação web moderna para gerenciamento de tarefas (To-Do List) desenvolvida com foco nas arquiteturas e ferramentas mais recentes do ecossistema **Angular**. O projeto abandona abordagens antigas para adotar gerenciamento de estado 100% baseado em **Signals** e validação com **Reactive Forms**.
+Uma aplicação web moderna para gerenciamento de tarefa desenvolvida com foco nas arquiteturas e ferramentas mais recentes do **Angular**. O projeto abandona abordagens antigas para adotar gerenciamento de estado baseado em **Signals** e validação com **Reactive Forms**.
 
 ---
 
@@ -15,13 +15,13 @@ Uma aplicação web moderna para gerenciamento de tarefas (To-Do List) desenvolv
 * **Gestão de Estado Reativa:** Conclusão, desmarcação e exclusão de tarefas com atualização instantânea na interface sem recarga de componentes.
 * **Contador Inteligente:** Rodapé calcula em tempo real o progresso das atividades (ex: *"2 de 5 concluídas"*).
 * **UI/UX em Dark Mode:** Interface desenhada com alto contraste, feedback visual em botões (cores dinâmicas para conclusão e alerta) e texto riscado para tarefas finalizadas.
-* **Fallback de Estado Vazio:** Mensagem amigável renderizada automaticamente quando não há tarefas na lista.
+* **Fallback de Estado Vazio:** Mensagem renderizada automaticamente quando não há tarefas na lista.
 
 ---
 
 ## 🛠️ Destaques Técnicos e Arquitetura
 
-Este projeto foi construído para colocar em prática os conceitos da nova era do Angular (Standalones e Reatividade Fina):
+Este projeto foi construído para colocar em prática os conceitos estudados em Angular:
 
 | Conceito Utilizado | Onde foi aplicado | Benefício Técnico |
 | :--- | :--- | :--- |
